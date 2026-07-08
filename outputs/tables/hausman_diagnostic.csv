@@ -1,0 +1,2 @@
+﻿"diagnostic","statistic","df","decision","rationale"
+"Hausman-style FE vs RE decision","not reported as formal chi-square","4","Prefer fixed-effects interpretation","Country heterogeneity is substantively central and the WDI panel is not a randomized sample; FE/TWFE estimates are more defensible for within-country associations."

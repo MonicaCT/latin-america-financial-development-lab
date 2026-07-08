@@ -1,0 +1,6 @@
+﻿"research_question","evidence","output"
+"How unequal is financial depth across Latin America?","Distribution diagnostics, outlier table, country ranking","distribution_diagnostics.csv; outlier_observations.csv; country_ranking.csv"
+"Are countries grouped into distinct financial-development profiles?","PCA and k-means clustering on latest indicators","pca_scores.csv; cluster_assignments.csv"
+"Do conclusions depend on arbitrary composite-index weights?","Three weighting schemes and rank-shift sensitivity","sensitivity_analysis.csv"
+"Are correlations robust to unobserved country and year heterogeneity?","OLS, country FE, two-way FE, lagged model, robust/DK-style SE","advanced_model_results.csv"
+"Where does Bolivia sit in the regional distribution?","Bolivia benchmark against regional median and policy quadrant","bolivia_advanced_profile.csv"

@@ -1,0 +1,11 @@
+﻿.navbar { border-bottom: 3px solid #BB1E10; }
+.bslib-card { border-radius: 6px; border: 1px solid #E5E7EB; box-shadow: none; }
+.kpi-card .card-body { min-height: 104px; }
+.kpi-title { color: #6B7280; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0; margin-bottom: 0.35rem; }
+.kpi-value { color: #1F2933; font-weight: 700; font-size: clamp(1.25rem, 2vw, 2rem); line-height: 1.1; overflow-wrap: anywhere; }
+.status-block { border-left: 4px solid #BB1E10; background: #FFFFFF; padding: 1rem 1.25rem; color: #1F2933; }
+body.dark-dashboard { background: #111827 !important; color: #E5E7EB !important; }
+body.dark-dashboard .bslib-card, body.dark-dashboard .card, body.dark-dashboard .status-block { background: #1F2933 !important; color: #F9FAFB !important; border-color: #374151 !important; }
+body.dark-dashboard .kpi-title { color: #CBD5E1; }
+body.dark-dashboard .kpi-value { color: #FFFFFF; }
+body.dark-dashboard .navbar { background: #111827 !important; }

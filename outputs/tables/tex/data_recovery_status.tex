@@ -1,0 +1,12 @@
+﻿% Auto-generated from data_recovery_status.csv
+\begin{tabular}{lllll}
+\hline
+dataset & reconstructed & output & source & limitation \\
+\hline
+PanelCompleto & yes & data/processed/PanelCompleto.reconstructed.csv & World Bank WDI annual macro-financial panel & Equivalent annual panel, not exact lost monthly regulator merge. \\
+CreditType & partial/equivalent & data/processed/CreditType.reconstructed.csv & World Bank WDI credit-depth indicators plus regulator-source download audit & No product-level regulator split unless original workbooks are manually harmonized. \\
+EconomicSector & partial/equivalent & data/processed/EconomicSector.reconstructed.csv & World Bank WDI sector value-added indicators & Economic structure, not sectoral credit allocation. \\
+Regulator raw sources & attempted & data/raw/public\_sources and data/metadata/source\_download\_status.csv & Legacy country regulator URLs & Some official URLs changed, moved, or returned unavailable. \\
+\hline
+\end{tabular}
+

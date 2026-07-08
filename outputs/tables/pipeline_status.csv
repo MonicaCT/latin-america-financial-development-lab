@@ -1,0 +1,5 @@
+﻿"step","status","message","timestamp"
+"source_recovery","complete_with_partial_legacy_success","Official source download audit completed; WDI succeeded and selected regulator files were recovered.","2026-07-08T00:11:22"
+"panel_reconstruction","complete","PanelCompleto, CreditType, and EconomicSector reconstructed as official annual equivalents.","2026-07-08T00:11:22"
+"analysis","complete","Descriptive tables, rankings, coverage diagnostics, and econometric models regenerated from real data.","2026-07-08T00:11:22"
+"reporting","complete","Figures, dashboard, paper, and executive report regenerated.","2026-07-08T00:11:22"

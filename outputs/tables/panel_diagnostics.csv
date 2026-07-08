@@ -1,0 +1,7 @@
+﻿"metric","value","note"
+"country_year_rows","1122","Rows in PanelCompleto.reconstructed.csv"
+"countries","17","Latin American country sample"
+"first_year","1960","Earliest WDI year in panel"
+"latest_year","2025","Latest WDI year requested/available"
+"wdi_indicators","9","Official World Bank indicators used"
+"download_records","30","Rows in source_download_status.csv"

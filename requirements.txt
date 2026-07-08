@@ -1,0 +1,47 @@
+# Runtime requirements for the R/Quarto research pipeline.
+# Install these in R with install.packages("package_name") or use renv::init()
+# followed by renv::snapshot() once the project is run in a full R environment.
+
+R >= 4.2
+quarto >= 1.4
+
+# Core data work
+tidyverse
+data.table
+readr
+readxl
+janitor
+lubridate
+zoo
+slider
+scales
+
+# Reporting and visualization
+ggplot2
+patchwork
+ggrepel
+viridis
+treemapify
+knitr
+kableExtra
+gt
+modelsummary
+
+# Econometrics
+plm
+lmtest
+sandwich
+broom
+
+# Dashboard
+shiny
+bslib
+DT
+plotly
+
+# Optional mapping and export helpers
+sf
+rnaturalearth
+rnaturalearthdata
+htmltools
+webshot2

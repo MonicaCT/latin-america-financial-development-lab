@@ -1,0 +1,6 @@
+﻿"table","rows","path"
+"Country ranking","17","outputs/tables/country_ranking.csv"
+"Summary statistics","9","outputs/tables/summary_statistics.csv"
+"Econometric results","12","outputs/tables/econometric_results.csv"
+"Source download status","30","data/metadata/source_download_status.csv"
+"Data recovery status","4","outputs/tables/data_recovery_status.csv"

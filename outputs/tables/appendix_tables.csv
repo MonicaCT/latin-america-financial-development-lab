@@ -1,0 +1,5 @@
+﻿"appendix","item","status","path"
+"A","WDI indicator dictionary","generated","data/metadata/wdi_indicator_dictionary.csv"
+"B","Source registry","generated","data/metadata/source_registry.csv"
+"C","Source download status","generated","data/metadata/source_download_status.csv"
+"D","Model results","generated","outputs/models/model_results.csv"

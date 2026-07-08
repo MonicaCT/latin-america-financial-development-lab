@@ -1,0 +1,347 @@
+﻿<!doctype html><html><head><meta charset="utf-8"><title>Latin America Financial Development Lab Dashboard</title><style>body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f4ef;color:#222}.shell{display:grid;grid-template-columns:270px 1fr;min-height:100vh}nav{background:#222;color:white;padding:24px;position:sticky;top:0;height:100vh}nav h1{font-size:22px}nav button{display:block;width:100%;margin:8px 0;padding:11px;border:0;text-align:left;background:#393939;color:white;cursor:pointer}nav button.active{background:#e3120b}main{padding:32px 42px}.panel{display:none}.panel.active{display:block}.hero{background:#2f3a45;color:white;padding:28px;border-left:8px solid #e3120b}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.kpi{background:white;border-left:5px solid #e3120b;padding:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}img{max-width:100%;background:white;border:1px solid #ddd}table{width:100%;border-collapse:collapse;background:white;font-size:13px}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}th{background:#222;color:white}input,select{padding:10px;margin:8px 8px 12px 0}.callout{background:white;border-left:5px solid #007c77;padding:14px;margin:14px 0}</style></head><body>
+<div class="shell"><nav><h1>LAFD Lab</h1><p>International research dashboard</p><p><a href="https://github.com/MonicaCT/latin-america-financial-development-lab">GitHub repository</a></p><button class="active" data-tab="overview">Executive Cover</button><button data-tab="explorer">Country Explorer</button><button data-tab="clusters">PCA & Clusters</button><button data-tab="models">Models</button><button data-tab="bolivia">Bolivia</button><button data-tab="quality">Data Quality</button><button data-tab="downloads">Downloads</button></nav>
+<main>
+<section id="overview" class="panel active"><div class="hero"><h1>Latin America Financial Development Lab</h1><p>Official public-data reconstruction with transparent limitations, doctoral-level diagnostics and publication-ready outputs.</p></div><div class="kpis"><div class="kpi"><b>Rows</b><br>1122</div><div class="kpi"><b>Countries</b><br>17</div><div class="kpi"><b>Top composite index</b><br>Brazil</div><div class="kpi"><b>Model specifications</b><br>5</div></div><div class="callout"><b>Automated interpretation.</b> Deep systems combine high credit depth with broader liquidity; shallow systems are not failures by definition, but indicate where institutional and credit-information constraints may bind.</div><div class="grid"><img src="../outputs/figures/figure_16_composite_financial_development_index.png"><img src="../outputs/figures/figure_17_pca_financial_system_clusters.png"></div></section>
+<section id="explorer" class="panel"><h1>Country Explorer</h1><input id="filter" placeholder="Filter country or ISO"><div id="interpretation" class="callout"></div><div id="countryTable"></div></section>
+<section id="clusters" class="panel"><h1>PCA & Clusters</h1><select id="clusterFilter"><option value="">All clusters</option><option>Deep financial systems</option><option>Intermediate financial systems</option><option>Shallow financial systems</option></select><div id="clusterTable"></div><img src="../outputs/figures/figure_17_pca_financial_system_clusters.png"></section>
+<section id="models" class="panel"><h1>Econometric Diagnostics</h1><div class="callout">Models are diagnostic, not causal. The preferred interpretation emphasizes two-way fixed effects and robust uncertainty.</div><table><thead><tr><th>model</th><th>term</th><th>estimate</th><th>std_error</th><th>t_stat</th><th>n</th><th>r_squared</th><th>se_type</th><th>note</th></tr></thead><tbody><tr><td>Pooled OLS</td><td>intercept</td><td>-72.3154</td><td>47.3906</td><td>-1.526</td><td>510</td><td>0.18</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Pooled OLS</td><td>gdp_growth_annual_pct</td><td>-0.3517</td><td>0.1901</td><td>-1.85</td><td>510</td><td>0.18</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Pooled OLS</td><td>inflation_annual_pct</td><td>0.0007</td><td>0.0025</td><td>0.276</td><td>510</td><td>0.18</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Pooled OLS</td><td>log_gdp_current_usd</td><td>3.4295</td><td>2.2065</td><td>1.554</td><td>510</td><td>0.18</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Pooled OLS</td><td>sector_value_added_hhi</td><td>71.3697</td><td>47.9456</td><td>1.489</td><td>510</td><td>0.18</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Country fixed effects</td><td>gdp_growth_annual_pct</td><td>-0.2519</td><td>0.141</td><td>-1.787</td><td>510</td><td>0.352</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Country fixed effects</td><td>inflation_annual_pct</td><td>0.0006</td><td>0.0026</td><td>0.247</td><td>510</td><td>0.352</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Country fixed effects</td><td>log_gdp_current_usd</td><td>7.3304</td><td>1.3311</td><td>5.507</td><td>510</td><td>0.352</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Country fixed effects</td><td>sector_value_added_hhi</td><td>32.7011</td><td>40.9241</td><td>0.799</td><td>510</td><td>0.352</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way fixed effects</td><td>gdp_growth_annual_pct</td><td>0.0052</td><td>0.2124</td><td>0.024</td><td>510</td><td>0.245</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way fixed effects</td><td>inflation_annual_pct</td><td>0.0006</td><td>0.0019</td><td>0.33</td><td>510</td><td>0.245</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way fixed effects</td><td>log_gdp_current_usd</td><td>6.4032</td><td>0.9353</td><td>6.846</td><td>510</td><td>0.245</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way fixed effects</td><td>sector_value_added_hhi</td><td>54.7608</td><td>39.4582</td><td>1.388</td><td>510</td><td>0.245</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Lagged credit-depth model</td><td>intercept</td><td>0.0135</td><td>3.4255</td><td>0.004</td><td>527</td><td>0.925</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Lagged credit-depth model</td><td>lag_private_credit_gdp</td><td>0.956</td><td>0.039</td><td>24.486</td><td>527</td><td>0.925</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Lagged credit-depth model</td><td>gdp_growth_annual_pct</td><td>-0.1343</td><td>0.0614</td><td>-2.187</td><td>527</td><td>0.925</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Lagged credit-depth model</td><td>inflation_annual_pct</td><td>-0.001</td><td>0.0011</td><td>-0.949</td><td>527</td><td>0.925</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Lagged credit-depth model</td><td>log_gdp_current_usd</td><td>0.1146</td><td>0.1788</td><td>0.641</td><td>527</td><td>0.925</td><td>country-cluster robust</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way FE, post-2000</td><td>gdp_growth_annual_pct</td><td>-0.4583</td><td>0.1199</td><td>-3.823</td><td>361</td><td>0.103</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way FE, post-2000</td><td>inflation_annual_pct</td><td>-0.0183</td><td>0.0547</td><td>-0.335</td><td>361</td><td>0.103</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way FE, post-2000</td><td>log_gdp_current_usd</td><td>-0.24</td><td>1.6949</td><td>-0.142</td><td>361</td><td>0.103</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr><tr><td>Two-way FE, post-2000</td><td>sector_value_added_hhi</td><td>77.8732</td><td>13.331</td><td>5.842</td><td>361</td><td>0.103</td><td>Driscoll-Kraay style</td><td>Annual WDI panel; descriptive association, not causal identification.</td></tr></tbody></table><img src="../outputs/figures/figure_20_model_coefficients.png"></section>
+<section id="bolivia" class="panel"><h1>Bolivia</h1><div class="callout">Bolivia records 51.75% of GDP in latest private bank credit, 0.72 percentage points relative to the regional median.</div><div class="grid"><img src="../outputs/figures/figure_21_bolivia_benchmark.png"><img src="../outputs/figures/figure_07_bolivia_regional_perspective.png"></div></section>
+<section id="quality" class="panel"><h1>Data Quality</h1><table><thead><tr><th>dataset</th><th>reconstructed</th><th>output</th><th>source</th><th>limitation</th></tr></thead><tbody><tr><td>PanelCompleto</td><td>yes</td><td>data/processed/PanelCompleto.reconstructed.csv</td><td>World Bank WDI annual macro-financial panel</td><td>Equivalent annual panel, not exact lost monthly regulator merge.</td></tr><tr><td>CreditType</td><td>partial/equivalent</td><td>data/processed/CreditType.reconstructed.csv</td><td>World Bank WDI credit-depth indicators plus regulator-source download audit</td><td>No product-level regulator split unless original workbooks are manually harmonized.</td></tr><tr><td>EconomicSector</td><td>partial/equivalent</td><td>data/processed/EconomicSector.reconstructed.csv</td><td>World Bank WDI sector value-added indicators</td><td>Economic structure, not sectoral credit allocation.</td></tr><tr><td>Regulator raw sources</td><td>attempted</td><td>data/raw/public_sources and data/metadata/source_download_status.csv</td><td>Legacy country regulator URLs</td><td>Some official URLs changed, moved, or returned unavailable.</td></tr></tbody></table><table><thead><tr><th>Country</th><th>iso3</th><th>rank_equal</th><th>rank_credit_heavy</th><th>rank_stability_sensitive</th><th>max_rank_shift</th><th>interpretation</th></tr></thead><tbody><tr><td>Argentina</td><td>ARG</td><td>12</td><td>16</td><td>15</td><td>4</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Bolivia</td><td>BOL</td><td>15</td><td>10</td><td>16</td><td>6</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Brazil</td><td>BRA</td><td>1</td><td>1</td><td>1</td><td>0</td><td>Stable ranking across weights</td></tr><tr><td>Chile</td><td>CHL</td><td>2</td><td>2</td><td>2</td><td>0</td><td>Stable ranking across weights</td></tr><tr><td>Colombia</td><td>COL</td><td>10</td><td>13</td><td>11</td><td>3</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Costa Rica</td><td>CRI</td><td>11</td><td>9</td><td>10</td><td>2</td><td>Stable ranking across weights</td></tr><tr><td>Dominican Republic</td><td>DOM</td><td>14</td><td>15</td><td>14</td><td>1</td><td>Stable ranking across weights</td></tr><tr><td>Ecuador</td><td>ECU</td><td>6</td><td>6</td><td>6</td><td>0</td><td>Stable ranking across weights</td></tr><tr><td>El Salvador</td><td>SLV</td><td>5</td><td>4</td><td>4</td><td>1</td><td>Stable ranking across weights</td></tr><tr><td>Guatemala</td><td>GTM</td><td>9</td><td>12</td><td>9</td><td>3</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Honduras</td><td>HND</td><td>3</td><td>3</td><td>3</td><td>0</td><td>Stable ranking across weights</td></tr><tr><td>Mexico</td><td>MEX</td><td>13</td><td>14</td><td>13</td><td>1</td><td>Stable ranking across weights</td></tr><tr><td>Nicaragua</td><td>NIC</td><td>7</td><td>11</td><td>7</td><td>4</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Panama</td><td>PAN</td><td>16</td><td>5</td><td>12</td><td>11</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Paraguay</td><td>PRY</td><td>4</td><td>7</td><td>5</td><td>3</td><td>Sensitive to weighting assumptions</td></tr><tr><td>Peru</td><td>PER</td><td>8</td><td>8</td><td>8</td><td>0</td><td>Stable ranking across weights</td></tr><tr><td>Venezuela</td><td>VEN</td><td>17</td><td>17</td><td>17</td><td>0</td><td>Stable ranking across weights</td></tr></tbody></table></section>
+<section id="downloads" class="panel"><h1>Downloads</h1><ul><li><a href="https://github.com/MonicaCT/latin-america-financial-development-lab">GitHub repository</a></li><li><a href="../docs/PROJECT_LINKS.md">Project links: datasets, figures, tables and reports</a></li><li><a href="../data/processed/PanelCompleto.reconstructed.csv">PanelCompleto.reconstructed.csv</a></li><li><a href="../outputs/figures/figure_catalog.csv">Figure catalog</a></li><li><a href="../outputs/tables/table_catalog.csv">Table catalog</a></li><li><a href="../outputs/tables/advanced_model_results.csv">advanced_model_results.csv</a></li><li><a href="../outputs/tables/pca_scores.csv">pca_scores.csv</a></li><li><a href="../outputs/tables/cluster_assignments.csv">cluster_assignments.csv</a></li><li><a href="../report/financial_development_report.html">Working paper</a></li><li><a href="../report/executive_report.html">Executive report</a></li></ul></section>
+</main></div>
+<script>
+const rows = [
+    {
+        "Country":  "Brazil",
+        "iso3":  "BRA",
+        "latest_year":  2025,
+        "composite_index_equal":  66.07,
+        "private_credit_gdp":  75.1,
+        "rank_equal":  1
+    },
+    {
+        "Country":  "Chile",
+        "iso3":  "CHL",
+        "latest_year":  2025,
+        "composite_index_equal":  59.23,
+        "private_credit_gdp":  102.08,
+        "rank_equal":  2
+    },
+    {
+        "Country":  "Honduras",
+        "iso3":  "HND",
+        "latest_year":  2024,
+        "composite_index_equal":  59.01,
+        "private_credit_gdp":  78.46,
+        "rank_equal":  3
+    },
+    {
+        "Country":  "Paraguay",
+        "iso3":  "PRY",
+        "latest_year":  2025,
+        "composite_index_equal":  58.7,
+        "private_credit_gdp":  55.7,
+        "rank_equal":  4
+    },
+    {
+        "Country":  "El Salvador",
+        "iso3":  "SLV",
+        "latest_year":  2025,
+        "composite_index_equal":  57.43,
+        "private_credit_gdp":  64.37,
+        "rank_equal":  5
+    },
+    {
+        "Country":  "Ecuador",
+        "iso3":  "ECU",
+        "latest_year":  2025,
+        "composite_index_equal":  56.41,
+        "private_credit_gdp":  58.87,
+        "rank_equal":  6
+    },
+    {
+        "Country":  "Nicaragua",
+        "iso3":  "NIC",
+        "latest_year":  2024,
+        "composite_index_equal":  54.55,
+        "private_credit_gdp":  32.33,
+        "rank_equal":  7
+    },
+    {
+        "Country":  "Peru",
+        "iso3":  "PER",
+        "latest_year":  2024,
+        "composite_index_equal":  52.37,
+        "private_credit_gdp":  39.62,
+        "rank_equal":  8
+    },
+    {
+        "Country":  "Guatemala",
+        "iso3":  "GTM",
+        "latest_year":  2025,
+        "composite_index_equal":  49.9,
+        "private_credit_gdp":  37.23,
+        "rank_equal":  9
+    },
+    {
+        "Country":  "Colombia",
+        "iso3":  "COL",
+        "latest_year":  2025,
+        "composite_index_equal":  47.46,
+        "private_credit_gdp":  39.86,
+        "rank_equal":  10
+    },
+    {
+        "Country":  "Costa Rica",
+        "iso3":  "CRI",
+        "latest_year":  2025,
+        "composite_index_equal":  46.19,
+        "private_credit_gdp":  51.03,
+        "rank_equal":  11
+    },
+    {
+        "Country":  "Argentina",
+        "iso3":  "ARG",
+        "latest_year":  2025,
+        "composite_index_equal":  44.52,
+        "private_credit_gdp":  17.6,
+        "rank_equal":  12
+    },
+    {
+        "Country":  "Mexico",
+        "iso3":  "MEX",
+        "latest_year":  2025,
+        "composite_index_equal":  43.82,
+        "private_credit_gdp":  35.5,
+        "rank_equal":  13
+    },
+    {
+        "Country":  "Dominican Republic",
+        "iso3":  "DOM",
+        "latest_year":  2025,
+        "composite_index_equal":  43.2,
+        "private_credit_gdp":  32.85,
+        "rank_equal":  14
+    },
+    {
+        "Country":  "Bolivia",
+        "iso3":  "BOL",
+        "latest_year":  2025,
+        "composite_index_equal":  42.67,
+        "private_credit_gdp":  51.75,
+        "rank_equal":  15
+    },
+    {
+        "Country":  "Panama",
+        "iso3":  "PAN",
+        "latest_year":  2020,
+        "composite_index_equal":  36.09,
+        "private_credit_gdp":  100.15,
+        "rank_equal":  16
+    },
+    {
+        "Country":  "Venezuela",
+        "iso3":  "VEN",
+        "latest_year":  2013,
+        "composite_index_equal":  31.09,
+        "private_credit_gdp":  27.47,
+        "rank_equal":  17
+    }
+];
+const clusters = [
+    {
+        "Country":  "Argentina",
+        "iso3":  "ARG",
+        "latest_year":  2025,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  17.6,
+        "broad_money_gdp":  "26.28",
+        "pc1":  -1.6845,
+        "pc2":  -0.6256
+    },
+    {
+        "Country":  "Bolivia",
+        "iso3":  "BOL",
+        "latest_year":  2025,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  51.75,
+        "broad_money_gdp":  "57.59",
+        "pc1":  -0.0783,
+        "pc2":  -0.9682
+    },
+    {
+        "Country":  "Brazil",
+        "iso3":  "BRA",
+        "latest_year":  2025,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  75.1,
+        "broad_money_gdp":  "118.23",
+        "pc1":  0.8191,
+        "pc2":  1.8406
+    },
+    {
+        "Country":  "Chile",
+        "iso3":  "CHL",
+        "latest_year":  2025,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  102.08,
+        "broad_money_gdp":  "",
+        "pc1":  1.0155,
+        "pc2":  0.8553
+    },
+    {
+        "Country":  "Colombia",
+        "iso3":  "COL",
+        "latest_year":  2025,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  39.86,
+        "broad_money_gdp":  "43.06",
+        "pc1":  -0.6393,
+        "pc2":  -0.2954
+    },
+    {
+        "Country":  "Costa Rica",
+        "iso3":  "CRI",
+        "latest_year":  2025,
+        "cluster_id":  2,
+        "cluster_label":  "Intermediate financial systems",
+        "private_credit_gdp":  51.03,
+        "broad_money_gdp":  "50.59",
+        "pc1":  0.617,
+        "pc2":  -0.1762
+    },
+    {
+        "Country":  "Dominican Republic",
+        "iso3":  "DOM",
+        "latest_year":  2025,
+        "cluster_id":  2,
+        "cluster_label":  "Intermediate financial systems",
+        "private_credit_gdp":  32.85,
+        "broad_money_gdp":  "41.31",
+        "pc1":  -0.3567,
+        "pc2":  -0.6571
+    },
+    {
+        "Country":  "Ecuador",
+        "iso3":  "ECU",
+        "latest_year":  2025,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  58.87,
+        "broad_money_gdp":  "62.11",
+        "pc1":  -0.0519,
+        "pc2":  0.7285
+    },
+    {
+        "Country":  "El Salvador",
+        "iso3":  "SLV",
+        "latest_year":  2025,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  64.37,
+        "broad_money_gdp":  "64.22",
+        "pc1":  0.1572,
+        "pc2":  0.8493
+    },
+    {
+        "Country":  "Guatemala",
+        "iso3":  "GTM",
+        "latest_year":  2025,
+        "cluster_id":  2,
+        "cluster_label":  "Intermediate financial systems",
+        "private_credit_gdp":  37.23,
+        "broad_money_gdp":  "60.4",
+        "pc1":  -0.2889,
+        "pc2":  0.1464
+    },
+    {
+        "Country":  "Honduras",
+        "iso3":  "HND",
+        "latest_year":  2024,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  78.46,
+        "broad_money_gdp":  "75.11",
+        "pc1":  0.591,
+        "pc2":  0.9826
+    },
+    {
+        "Country":  "Mexico",
+        "iso3":  "MEX",
+        "latest_year":  2025,
+        "cluster_id":  2,
+        "cluster_label":  "Intermediate financial systems",
+        "private_credit_gdp":  35.5,
+        "broad_money_gdp":  "48",
+        "pc1":  -0.0973,
+        "pc2":  -0.5895
+    },
+    {
+        "Country":  "Nicaragua",
+        "iso3":  "NIC",
+        "latest_year":  2024,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  32.33,
+        "broad_money_gdp":  "",
+        "pc1":  -1.5216,
+        "pc2":  0.3964
+    },
+    {
+        "Country":  "Panama",
+        "iso3":  "PAN",
+        "latest_year":  2020,
+        "cluster_id":  3,
+        "cluster_label":  "Deep financial systems",
+        "private_credit_gdp":  100.15,
+        "broad_money_gdp":  "",
+        "pc1":  4.5088,
+        "pc2":  -1.4391
+    },
+    {
+        "Country":  "Paraguay",
+        "iso3":  "PRY",
+        "latest_year":  2025,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  55.7,
+        "broad_money_gdp":  "",
+        "pc1":  -1.0001,
+        "pc2":  0.8568
+    },
+    {
+        "Country":  "Peru",
+        "iso3":  "PER",
+        "latest_year":  2024,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  39.62,
+        "broad_money_gdp":  "",
+        "pc1":  -0.723,
+        "pc2":  0.2774
+    },
+    {
+        "Country":  "Venezuela",
+        "iso3":  "VEN",
+        "latest_year":  2013,
+        "cluster_id":  1,
+        "cluster_label":  "Shallow financial systems",
+        "private_credit_gdp":  27.47,
+        "broad_money_gdp":  "48.61",
+        "pc1":  -1.5225,
+        "pc2":  -2.3888
+    }
+];
+function interp(r){ if(!r) return 'Select a country to generate an interpretation.'; const depth = Number(r.private_credit_gdp); const index = Number(r.composite_index_equal); let level = depth >= 70 ? 'high credit depth' : depth >= 40 ? 'intermediate credit depth' : 'shallow credit depth'; let rank = Number(r.rank_equal); return r.Country + ' ranks #' + rank + ' on the equal-weight composite index. It shows ' + level + ' and an index score of ' + index.toFixed(1) + '. Interpretation should be read as descriptive because the reconstructed panel is annual and macro-financial.'; }
+function renderCountries(q=''){ const f=rows.filter(r => (r.Country + r.iso3).toLowerCase().includes(q.toLowerCase())); let html='<table><thead><tr><th>Rank</th><th>Country</th><th>Year</th><th>Index</th><th>Private credit</th></tr></thead><tbody>'; for(const r of f){ html += '<tr data-iso="' + r.iso3 + '"><td>'+r.rank_equal+'</td><td>'+r.Country+'</td><td>'+r.latest_year+'</td><td>'+r.composite_index_equal+'</td><td>'+r.private_credit_gdp+'</td></tr>'; } html+='</tbody></table>'; document.getElementById('countryTable').innerHTML=html; document.querySelectorAll('#countryTable tr[data-iso]').forEach(row => row.addEventListener('click', () => { const selected = rows.find(x => x.iso3 === row.dataset.iso); document.getElementById('interpretation').innerText = interp(selected); })); document.getElementById('interpretation').innerText=interp(f[0]); }
+function renderClusters(q=''){ const f=clusters.filter(r => !q || r.cluster_label===q); let html='<table><thead><tr><th>Country</th><th>Cluster</th><th>PC1</th><th>PC2</th><th>Private credit</th></tr></thead><tbody>'; for(const r of f){ html+='<tr><td>'+r.Country+'</td><td>'+r.cluster_label+'</td><td>'+r.pc1+'</td><td>'+r.pc2+'</td><td>'+r.private_credit_gdp+'</td></tr>'; } html+='</tbody></table>'; document.getElementById('clusterTable').innerHTML=html; }
+renderCountries(); renderClusters();
+document.getElementById('filter').addEventListener('input', e => renderCountries(e.target.value));
+document.getElementById('clusterFilter').addEventListener('change', e => renderClusters(e.target.value));
+document.querySelectorAll('nav button').forEach(btn => btn.addEventListener('click', () => { document.querySelectorAll('nav button').forEach(b => b.classList.remove('active')); document.querySelectorAll('.panel').forEach(p => p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }));
+</script></body></html>

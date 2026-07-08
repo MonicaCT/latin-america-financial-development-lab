@@ -1,0 +1,5 @@
+﻿"dataset","status","primary_sources","caveat"
+"CreditType","original_partial_download_attempted","BCRA, BCB Brazil, CMF/SBIF, Superfinanciera Colombia, BCCR, Superintendencia de Bancos RD, Superintendencia de Bancos Ecuador, SSF El Salvador, BCN, Superintendencia de Bancos Panama, BCP Paraguay, SBS Peru, SUDEBAN, ASOBAN","The original country scripts depend on fragile country-specific layouts and legacy backup files not committed to the repo."
+"EconomicSector","original_source_not_committed","Country regulator workbooks plus EconomicSector_panel.xlsx, IPC.xlsx","Legacy procedure describes manual compilation into EconomicSector_panel.xlsx; that workbook was not present in repository or history."
+"PanelCompleto","reconstructed_from_official_equivalent","World Bank WDI plus partial regulator download audit","PanelCompleto.reconstructed.csv is a macro-financial equivalent panel, not the exact lost monthly regulator panel."
+"World Bank equivalent","downloaded_and_processed","World Bank API, WDI indicators","Annual country panel; suitable for reproducible portfolio analysis and transparent fallback."

@@ -1,0 +1,8 @@
+﻿"variable","label","research_question","n","mean","sd","p10","p25","median","p75","p90","skewness","outlier_count_iqr"
+"private_credit_gdp","Private bank credit (% of GDP)","How deep is bank intermediation?","674","33.969","22.642","11.535","17.447","28.151","45.75","62.493","1.492","22"
+"domestic_credit_financial_sector_gdp","Domestic credit by financial sector (% of GDP)","How broad is domestic credit provision?","434","48.676","26.739","19.62","28.015","43.472","62.413","82.251","1.088","13"
+"broad_money_gdp","Broad money (% of GDP)","How monetized is the economy?","1077","33.803","18.766","15.3","20.465","28.295","42.492","58.965","1.407","50"
+"gdp_growth_annual_pct","GDP growth (annual %)","Does financial depth co-move with growth?","1100","3.785","4.966","-1.12","1.921","4.108","6.154","8.809","-1.039","76"
+"inflation_annual_pct","Inflation (annual %)","How does macro instability interact with finance?","933","53.341","493.387","1.24","3.299","6.236","14.403","33.058","18.732","100"
+"sector_value_added_hhi","Sector value-added concentration","How concentrated is the productive structure?","959","0.394","0.068","0.319","0.348","0.392","0.425","0.469","2.586","34"
+"credit_growth_pp","Annual change in private credit depth","Where are large credit shifts located?","653","0.589","6.133","-2.808","-0.826","0.724","2.294","4.275","-5.046","45"
