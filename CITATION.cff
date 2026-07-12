@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using these metadata."
+title: "Financial Development, Stability and Growth in Latin America"
+type: software
+authors:
+  - given-names: "Monica"
+    family-names: "Cueto Tapia"
+repository-code: "https://github.com/MonicaCT/latin-america-financial-development-lab"
+url: "https://github.com/MonicaCT/latin-america-financial-development-lab"
+license: MIT
+abstract: "Reproducible analysis of financial development, political instability and economic growth in Latin America using panel-data methods, regional comparisons and policy-oriented reporting."
+keywords:
+  - financial development
+  - economic growth
+  - political instability
+  - Latin America
+  - panel data
+  - econometrics
+  - open science
