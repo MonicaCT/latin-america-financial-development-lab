@@ -2,7 +2,7 @@
 
 | Dimension | Classification |
 |---|---|
-| Primary Lab | Data Analytics Lab |
+| Primary Lab | Development Analytics Lab |
 | Secondary Lab 1 | Applied Economics Lab |
 | Secondary Lab 2 | Research Methods Lab |
 | Secondary Lab 3 | Open Science Lab |

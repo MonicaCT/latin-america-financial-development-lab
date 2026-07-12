@@ -9,7 +9,7 @@ project_root <- function() {
   if (file.exists(file.path(parent, "README.md")) && dir.exists(file.path(parent, "src"))) {
     return(parent)
   }
-  stop("Project root not found. Run from the FinancialData root or src/ folder.")
+  stop("Project root not found. Run from the repository root or src/ folder.")
 }
 
 ROOT <- project_root()
@@ -166,4 +166,4 @@ safe_source <- function(file) {
   source(path("src", file), local = FALSE)
 }
 
-message("FinancialData setup complete: ", ROOT)
+message("Financial development setup complete: ", ROOT)

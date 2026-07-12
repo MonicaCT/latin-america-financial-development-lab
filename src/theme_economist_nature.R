@@ -50,7 +50,7 @@ make_status_figure <- function(name, title, message) {
     segments(0.08, 0.82, 0.92, 0.82, col = editorial_palette["red"], lwd = 4)
     text(0.08, 0.68, title, adj = 0, cex = 1.45, font = 2, col = editorial_palette["navy"])
     text(0.08, 0.52, message, adj = 0, cex = 0.95, col = editorial_palette["gray"])
-    text(0.08, 0.18, "FinancialData | data-unavailable placeholder", adj = 0, cex = 0.75, col = editorial_palette["gray"])
+    text(0.08, 0.18, "Financial development lab | data-unavailable placeholder", adj = 0, cex = 0.75, col = editorial_palette["gray"])
   }
   grDevices::png(png_file, width = 3000, height = 1800, res = 300)
   draw()

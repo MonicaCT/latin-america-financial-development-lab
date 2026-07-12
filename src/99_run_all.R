@@ -1,4 +1,4 @@
-﻿start_time <- Sys.time()
+start_time <- Sys.time()
 
 source(file.path("src", "00_setup.R"))
 source(path("src", "00_data_recovery_audit.R"))
@@ -18,7 +18,7 @@ source(path("src", "13_reports_and_pages.R"))
 
 session_file <- path("replication", "session_info.txt")
 write_text_safe(c(
-  "FinancialData replication run",
+  "Financial development replication run",
   paste("Started:", format(start_time, "%Y-%m-%d %H:%M:%S")),
   paste("Finished:", format(Sys.time(), "%Y-%m-%d %H:%M:%S")),
   "",
@@ -26,4 +26,4 @@ write_text_safe(c(
 ), session_file)
 
 append_status(status_row("99_run_all", "complete", paste("Runtime seconds:", round(difftime(Sys.time(), start_time, units = "secs"), 2))))
-message("Full FinancialData pipeline complete")
+message("Full financial development pipeline complete")

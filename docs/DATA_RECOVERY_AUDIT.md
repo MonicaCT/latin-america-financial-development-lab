@@ -1,4 +1,4 @@
-﻿# Data Recovery Audit
+# Data Recovery Audit
 
 Last updated: 2026-07-08
 
@@ -13,7 +13,7 @@ An exhaustive repository and Git-history audit found no recoverable analytical d
 1. Current repository tree, including hidden files and generated outputs.
 2. Git history across all commits, branches, and tags.
 3. Script I/O references in all legacy and new R scripts.
-4. Targeted workspace search under `C:\Users\Asus\Documents\Github` for expected dataset names.
+4. Targeted workspace search under the local GitHub workspace for expected dataset names.
 5. Procedure PDFs describing the legacy construction process.
 
 ## Current Repository Findings
