@@ -10,9 +10,9 @@
 ![Project banner](docs/assets/figures/project_banner.png)
 
 [![Website](https://img.shields.io/badge/Website-GitHub%20Pages-B23A48?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/)
-[![Dashboard](https://img.shields.io/badge/Explore-Dashboard-1F7A8C?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/dashboard/)
-[![Report](https://img.shields.io/badge/Read-Report-2F5F8F?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/financial_development_report.html)
-[![Executive Report](https://img.shields.io/badge/Executive-Report-E58F2A?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/executive_report.html)
+[![Dashboard](https://img.shields.io/badge/Explore-Dashboard-1F7A8C?style=for-the-badge)](https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/dashboard/index.html)
+[![Report](https://img.shields.io/badge/Read-Report-2F5F8F?style=for-the-badge)](https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/report/financial_development_report.html)
+[![Executive Report](https://img.shields.io/badge/Executive-Report-E58F2A?style=for-the-badge)](https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/report/executive_report.html)
 [![Repository](https://img.shields.io/badge/Repository-GitHub-1F2933?style=for-the-badge)](https://github.com/MonicaCT/latin-america-financial-development-lab)
 [![Back to Portfolio](https://img.shields.io/badge/Back%20to-Portfolio-B23A48?style=for-the-badge)](https://monicact.github.io/)
 
@@ -102,7 +102,7 @@ The repository includes pooled and fixed-effects panel-model outputs, robustness
 
 ## Dashboard
 
-The dashboard is available through GitHub Pages: [latin-america-financial-development-lab/dashboard/](https://monicact.github.io/latin-america-financial-development-lab/dashboard/).
+The dashboard is available as a public repository HTML file: [dashboard/index.html](https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/dashboard/index.html).
 
 It is also stored as [dashboard/index.html](dashboard/index.html), with source in [dashboard/app.R](dashboard/app.R). It should be interpreted as a macro-financial reporting dashboard, not as a new empirical result beyond the documented pipeline.
 
