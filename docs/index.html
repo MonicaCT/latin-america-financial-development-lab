@@ -1,6 +1,240 @@
-﻿<!doctype html><html><head><meta charset="utf-8"><title>Latin America Financial Development Lab</title><style>body{font-family:Arial,Helvetica,sans-serif;margin:36px;color:#222;background:#f7f4ef}main{max-width:1100px;margin:auto;background:white;padding:34px}a{color:#e3120b}img{max-width:100%;border:1px solid #ddd}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}</style></head><body><main>
-<h1>Latin America Financial Development Lab</h1>
-<p>Doctoral-quality public-data reconstruction with transparent limitations, advanced diagnostics and policy-facing communication.</p>
-<ul><li><a href="../dashboard/index.html">Dashboard</a></li><li><a href="../report/financial_development_report.html">Working paper</a></li><li><a href="../report/executive_report.html">Executive report</a></li><li><a href="METHODOLOGICAL_REVIEW.md">Methodological review</a></li><li><a href="DOCTORAL_COMMITTEE_EVALUATION.md">Doctoral committee evaluation</a></li></ul>
-<div class="grid"><img src="assets/figures/figure_16_composite_financial_development_index.png"><img src="assets/figures/figure_17_pca_financial_system_clusters.png"></div>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latin America Financial Development Lab | Financial Development Analytics</title>
+  <meta name="description" content="Reproducible financial development, macro-financial stability and growth diagnostics for Latin America using public-data reconstruction, PCA, clustering, panel models and dashboard reporting.">
+  <meta property="og:title" content="Latin America Financial Development Lab">
+  <meta property="og:description" content="Public-data macro-financial dashboard and working paper for Latin America.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://monicact.github.io/latin-america-financial-development-lab/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/MonicaCT/latin-america-financial-development-lab/main/docs/assets/figures/project_banner.png">
+  <link rel="canonical" href="https://monicact.github.io/latin-america-financial-development-lab/">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Project navigation">
+      <a class="brand" href="#home" aria-label="Project home">
+        <strong>Latin America Financial Development Lab</strong>
+        <span>Applied Economics Lab</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="main-nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#figures">Figures</a>
+        <a href="#tables">Tables</a>
+        <a href="#data">Data</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#reports">Reports</a>
+        <a href="#reproducibility">Reproducibility</a>
+        <a href="https://monicact.github.io/">Back to Portfolio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" style="background: linear-gradient(90deg, rgba(247,245,240,.96), rgba(247,245,240,.80)), url('assets/figures/project_banner.png') center right / cover no-repeat;">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Macro-financial development analytics</p>
+          <h1>Latin America Financial Development Lab</h1>
+          <p class="subtitle">Reproducible evidence on financial development, macroeconomic stability and economic growth across Latin America.</p>
+          <p class="lead">This repository reconstructs a comparable public-data panel, documents transparent limitations, and communicates PCA, clustering, composite-index sensitivity, panel-model diagnostics and policy-facing dashboard outputs.</p>
+          <div class="actions">
+            <a class="button primary" href="https://monicact.github.io/latin-america-financial-development-lab/">Website</a>
+            <a class="button secondary" href="https://monicact.github.io/latin-america-financial-development-lab/dashboard/">Dashboard</a>
+            <a class="button secondary" href="https://monicact.github.io/latin-america-financial-development-lab/report/financial_development_report.html">Report</a>
+            <a class="button tertiary" href="https://github.com/MonicaCT/latin-america-financial-development-lab">Repository</a>
+            <a class="button tertiary" href="https://monicact.github.io/">Back to Portfolio</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Project signals">
+          <div class="signal"><strong>Public-data reconstruction</strong><span>Annual WDI-based panel with explicit transparency about unavailable legacy regulator panels.</span></div>
+          <div class="signal"><strong>Analytical portfolio</strong><span>PCA, clustering, composite index, sensitivity, panel diagnostics and dashboard reporting.</span></div>
+          <div class="signal"><strong>Interpretation guardrail</strong><span>Results are macro-financial diagnostics and associations, not final causal evidence.</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section white" id="summary">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Executive Summary</p><h2>Financial development evidence with transparent limits.</h2></div></div>
+        <div class="grid two">
+          <article class="surface accent"><h3>Research question</h3><p>How do financial development, macroeconomic stability and productive structure differ across Latin America, and what do these differences imply for regional comparison, growth diagnostics and Bolivia-centered policy interpretation?</p></article>
+          <article class="surface teal"><h3>Analytical product</h3><p>A public-data research compendium with reconstructed panels, financial-development indicators, distributional diagnostics, PCA, clustering, composite-index sensitivity, panel models, dashboard outputs and working-paper reporting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metrics">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Key Metrics</p><h2>Verified project scope.</h2></div></div>
+        <div class="metric-grid">
+          <div class="metric"><strong>1,122</strong><span>country-year observations</span></div>
+          <div class="metric"><strong>17</strong><span>Latin American countries</span></div>
+          <div class="metric"><strong>WDI</strong><span>official public-data reconstruction</span></div>
+          <div class="metric"><strong>21</strong><span>existing figure assets in docs</span></div>
+          <div class="metric"><strong>PCA</strong><span>financial-system clustering</span></div>
+          <div class="metric"><strong>Panel</strong><span>macro-financial model diagnostics</span></div>
+          <div class="metric"><strong>Dashboard</strong><span>existing public reporting product</span></div>
+          <div class="metric"><strong>Reports</strong><span>working paper and executive report</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="findings">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Key Findings</p><h2>Findings already documented in the repository.</h2></div></div>
+        <article class="surface green">
+          <ul class="list-clean">
+            <li>The reconstructed panel contains 1,122 country-year observations for 17 Latin American countries.</li>
+            <li>The project uses official World Bank WDI indicators rather than fabricating missing monthly regulator panels.</li>
+            <li>The region separates into shallow, intermediate and deep financial-system profiles.</li>
+            <li>Composite rankings are informative, but some results are sensitive to index weights.</li>
+            <li>Bolivia is visible in the regional benchmark, while stronger sectoral claims require renewed regulator-level reconstruction.</li>
+            <li>Panel-model outputs are diagnostic associations, not final causal evidence about credit allocation or growth.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="dashboard">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Dashboard</p><h2>Existing macro-financial reporting dashboard.</h2></div><a class="button secondary small" href="https://monicact.github.io/latin-america-financial-development-lab/dashboard/">Open dashboard</a></div>
+        <article class="project-card">
+          <div class="project-media"><img src="assets/figures/figure_13_productive_transformation_dashboard_figure.png" alt="Financial development dashboard figure"></div>
+          <div class="project-body">
+            <h3>Dashboard-ready evidence</h3>
+            <p>The existing dashboard is stored as <code>dashboard/index.html</code>, with source in <code>dashboard/app.R</code>. It should be interpreted as a macro-financial reporting dashboard, not as a new empirical result beyond the documented pipeline.</p>
+            <div class="card-actions"><a class="button primary small" href="https://monicact.github.io/latin-america-financial-development-lab/dashboard/">Live dashboard</a><a class="button secondary small" href="https://github.com/MonicaCT/latin-america-financial-development-lab/tree/main/dashboard">Dashboard source</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section white" id="figures">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Main Figures</p><h2>Existing figures reused without regeneration.</h2></div></div>
+        <div class="grid three">
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_16_composite_financial_development_index.png" alt="Composite financial development index"></div><div class="project-body"><h3>Composite financial development index</h3><p>Existing figure on composite index ranking and measurement.</p></div></article>
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_17_pca_financial_system_clusters.png" alt="PCA financial system clusters"></div><div class="project-body"><h3>PCA financial-system clusters</h3><p>Existing figure showing financial-system profiles from PCA and clustering.</p></div></article>
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_18_rank_sensitivity.png" alt="Rank sensitivity figure"></div><div class="project-body"><h3>Rank sensitivity</h3><p>Existing sensitivity figure showing how rankings respond to index choices.</p></div></article>
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_21_bolivia_benchmark.png" alt="Bolivia benchmark figure"></div><div class="project-body"><h3>Bolivia benchmark</h3><p>Existing figure placing Bolivia in the regional comparison.</p></div></article>
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_20_model_coefficients.png" alt="Model coefficients figure"></div><div class="project-body"><h3>Model coefficients</h3><p>Existing diagnostic figure for model associations.</p></div></article>
+          <article class="project-card"><div class="project-media"><img src="assets/figures/figure_15_policy_quadrant.png" alt="Policy quadrant figure"></div><div class="project-body"><h3>Policy quadrant</h3><p>Existing policy-facing figure for macro-financial interpretation.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tables">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Executive Tables</p><h2>Existing HTML table outputs.</h2></div></div>
+        <div class="grid four">
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/outputs/tables/html/executive_tables.html"><h3>Executive tables</h3><p>Summary reporting tables.</p></a>
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/outputs/tables/html/composite_index.html"><h3>Composite index</h3><p>Index output table.</p></a>
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/outputs/tables/html/cluster_assignments.html"><h3>Cluster assignments</h3><p>PCA and clustering outputs.</p></a>
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/outputs/tables/html/econometric_results.html"><h3>Econometric results</h3><p>Panel-model diagnostic table.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="data">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Data Sources</p><h2>Public-data reconstruction and coverage.</h2></div></div>
+        <div class="grid two">
+          <article class="surface teal"><h3>Data coverage</h3><ul class="list-clean"><li>1,122 country-year observations.</li><li>17 Latin American countries.</li><li>Official World Bank WDI indicators.</li><li>Reconstructed annual equivalents for legacy <code>CreditType</code>, <code>EconomicSector</code> and <code>PanelCompleto</code> data products.</li></ul></article>
+          <article class="surface orange"><h3>Transparency rule</h3><p>The repository explicitly records when original legacy disaggregations are unavailable. The project uses public reconstructed annual equivalents rather than fabricating missing monthly regulator panels.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Analytical Workflow</p><h2>From public data to dashboard products.</h2></div></div>
+        <div class="timeline">
+          <article><h3>1. Public-data reconstruction</h3><p>Reconstruct a comparable annual panel using official public sources.</p></article>
+          <article><h3>2. Coverage and quality validation</h3><p>Document coverage, missingness, recovery limits and quality-control outputs.</p></article>
+          <article><h3>3. Indicator construction</h3><p>Compute financial-development indicators, country profiles and composite measures.</p></article>
+          <article><h3>4. Diagnostics</h3><p>Apply distributional analysis, PCA, clustering, sensitivity checks and panel-model diagnostics.</p></article>
+          <article><h3>5. Communication products</h3><p>Publish dashboard figures, executive tables, working paper, executive report and replication documentation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="methodology">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Methodology</p><h2>Documented methods and interpretation boundaries.</h2></div><a class="button secondary small" href="METHODOLOGY.md">Open methodology</a></div>
+        <div class="grid three">
+          <article class="surface"><h3>Reconstruction</h3><p>Comparable public-data panel reconstruction with explicit limitation notes.</p></article>
+          <article class="surface"><h3>Profiles and indices</h3><p>Financial-development indicators, country profiles, composite indices and sensitivity checks.</p></article>
+          <article class="surface"><h3>Model diagnostics</h3><p>Pooled and fixed-effects panel-model outputs interpreted as associations, not final causal estimates.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Reports</p><h2>Existing reports and documentation.</h2></div></div>
+        <div class="grid four">
+          <a class="surface" href="https://monicact.github.io/latin-america-financial-development-lab/report/financial_development_report.html"><h3>Working paper HTML</h3><p>Public working-paper report.</p></a>
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/report/financial_development_report.pdf"><h3>Working paper PDF</h3><p>PDF report file.</p></a>
+          <a class="surface" href="https://monicact.github.io/latin-america-financial-development-lab/report/executive_report.html"><h3>Executive report HTML</h3><p>Executive report page.</p></a>
+          <a class="surface" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/report/executive_report.pdf"><h3>Executive report PDF</h3><p>PDF executive report.</p></a>
+          <a class="surface" href="METHODOLOGICAL_REVIEW.md"><h3>Methodological review</h3><p>Review note.</p></a>
+          <a class="surface" href="QUALITY_CONTROL_REPORT.md"><h3>Quality control</h3><p>Quality-control report.</p></a>
+          <a class="surface" href="DATA_RECOVERY_AUDIT.md"><h3>Data recovery audit</h3><p>Recovery audit note.</p></a>
+          <a class="surface" href="PROJECT_LINKS.md"><h3>Project links</h3><p>Repository link map.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="reproducibility">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Reproducibility</p><h2>Documented reproduction entry points.</h2></div></div>
+        <div class="grid two">
+          <article class="surface accent"><h3>Commands documented in README</h3><pre><code>powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\src\reconstruct_public_data.ps1 -Root (Resolve-Path .).Path
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\src\final_quality_upgrade.ps1 -Root (Resolve-Path .).Path</code></pre><p>These commands were not executed during this website update.</p></article>
+          <article class="surface teal"><h3>Replication documentation</h3><ul class="list-clean"><li><a href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/replication/README.md">replication/README.md</a></li><li><a href="REPLICATION_GUIDE.md">docs/REPLICATION_GUIDE.md</a></li><li><a href="QUALITY_CONTROL_REPORT.md">docs/QUALITY_CONTROL_REPORT.md</a></li><li><a href="VARIABLE_DICTIONARY.md">docs/VARIABLE_DICTIONARY.md</a></li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="limitations">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Limitations</p><h2>What the evidence can and cannot claim.</h2></div></div>
+        <article class="surface orange">
+          <ul class="list-clean">
+            <li>The reconstructed annual WDI panel is internationally comparable and reproducible, but it is not the exact missing monthly regulator panel.</li>
+            <li><code>CreditType.reconstructed</code> and <code>EconomicSector.reconstructed</code> are official annual equivalents, not recovered historical disaggregations.</li>
+            <li>Results should be read as macro-financial diagnostics and portfolio evidence, not as final causal evidence about sectoral credit allocation or growth.</li>
+            <li>Stronger sectoral claims require renewed regulator-level reconstruction.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section white" id="citation">
+      <div class="container">
+        <div class="grid two">
+          <article class="surface accent"><p class="eyebrow">Citation</p><h2>Cite this repository.</h2><p>Citation metadata are available in <code>CITATION.cff</code>.</p><a class="button secondary small" href="https://github.com/MonicaCT/latin-america-financial-development-lab/blob/main/CITATION.cff">Open CITATION.cff</a></article>
+          <article class="surface teal"><p class="eyebrow">Back to Portfolio</p><h2>Monica Cueto Tapia</h2><p>Applied Economist & Data Analyst.</p><div class="card-actions"><a class="button primary small" href="https://monicact.github.io/">Portfolio</a><a class="button secondary small" href="https://github.com/MonicaCT">GitHub profile</a><a class="button secondary small" href="https://github.com/MonicaCT/latin-america-financial-development-lab">Repository</a></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><span>Latin America Financial Development Lab - public-data macro-financial diagnostics.</span><a href="#home">Back to top</a></div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

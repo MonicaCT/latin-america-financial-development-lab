@@ -1,4 +1,4 @@
-﻿# Financial Development, Stability and Growth in Latin America
+# Financial Development, Stability and Growth in Latin America
 
 **Reproducible evidence on financial development, political instability and economic growth across Latin America**
 
@@ -9,12 +9,12 @@
 
 ![Project banner](docs/assets/figures/project_banner.png)
 
-[![Dashboard](https://img.shields.io/badge/Explore-Dashboard-B23A48?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/dashboard/)
-[![Paper](https://img.shields.io/badge/Read-Paper-16324F?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/financial_development_report.html)
-[![Technical Report](https://img.shields.io/badge/Executive-Report-4C6E91?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/executive_report.html)
-[![Methodology](https://img.shields.io/badge/View-Methodology-6B7280?style=for-the-badge)](docs/METHODOLOGY.md)
-[![Data](https://img.shields.io/badge/Explore-Data-2A9D8F?style=for-the-badge)](data/processed/PanelCompleto.reconstructed.csv)
-[![Reproduce](https://img.shields.io/badge/Reproduce-Analysis-264653?style=for-the-badge)](replication/README.md)
+[![Website](https://img.shields.io/badge/Website-GitHub%20Pages-B23A48?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/)
+[![Dashboard](https://img.shields.io/badge/Explore-Dashboard-1F7A8C?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/dashboard/)
+[![Report](https://img.shields.io/badge/Read-Report-2F5F8F?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/financial_development_report.html)
+[![Executive Report](https://img.shields.io/badge/Executive-Report-E58F2A?style=for-the-badge)](https://monicact.github.io/latin-america-financial-development-lab/report/executive_report.html)
+[![Repository](https://img.shields.io/badge/Repository-GitHub-1F2933?style=for-the-badge)](https://github.com/MonicaCT/latin-america-financial-development-lab)
+[![Back to Portfolio](https://img.shields.io/badge/Back%20to-Portfolio-B23A48?style=for-the-badge)](https://monicact.github.io/)
 
 Repository: [latin-america-financial-development-lab](https://github.com/MonicaCT/latin-america-financial-development-lab)
 
